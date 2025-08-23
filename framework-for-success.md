@@ -22,9 +22,9 @@ I hope that you will direct your efforts towards improving your world in some wa
 
 ## While working towards your objectives, I hope too that you will:  
 
-a) always seek to work with smarter people, in the ‘best’ place;
+a) always seek to work with smarter people, in the ‘best’ place;  
 b) maintain a healthy balance in your life, and in attitudes/relationships to others and the world generally;  
-c) convince yourself that doing your best is a more rewarding objective than striving to BE the best;
+c) convince yourself that doing your best is a more rewarding objective than striving to BE the best;  
 d) maintain the enthusiasm, curiosity, optimism, thoughtfulness, forward thinking, self-confidence, ego and ambition that have been such an impressive and engaging feature of your younger life, but  
 e) temper these qualities with:  
 
@@ -48,12 +48,12 @@ c) ensure, to the extent possible, when embarking on something new, that you pay
 - maximising the value of your strengths, including intellect, curiosity, flexibility, enthusiasm,  
 - minimising the effects of areas of vulnerability, such as social isolation, tolerance for ambiguity, impatience with some others.  
 
-d) see situations involving other people from their point of view, reflecting on (depending on the situation):
+d) see situations involving other people from their point of view, reflecting on (depending on the situation):  
 
 - what led them to the current position?  
 - are they being altruistic, or what’s in it for them?  
 
-*(note; If self-interest is in the race, back it every time)*  
+(note; If self-interest is in the race, back it every time)  
 
 - what is involved for them; is this, embarrassing, intrusive?  
 - be judicious in verbal output; reflect on why they need to know that.  
@@ -66,5 +66,5 @@ I will be very keen to do anything (else) that I can to help you along that jour
 
 ---
 
-**Emeritus Professor Trevor Heath OAM, BVSc (Syd), MA(Ed) (MichState), MHPEd (NSW),  
-PhD (ANU), DVSc (Qld) DVSc honoris causa (Syd), FACVSc**
+Emeritus Professor Trevor Heath OAM, BVSc (Syd), MA(Ed) (MichState), MHPEd (NSW),  
+PhD (ANU), DVSc (Qld) DVSc honoris causa (Syd), FACVSc
