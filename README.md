@@ -7,12 +7,15 @@ A written specification is what enables you to align humans - it’s the artifac
 - The new scarce skill is writing specs that fully capture intent and values.
 
 ## Structured communication is 80% of the job
+
  - Talk to understand
  - Distill and ideate
  - Plan
  - Share
  - Translate
  - Test and Verify
+
+The code is not important, when the code runs does it achieve your goals, and does it alleviate the challenges of the end user?
 
 In an era where AI transforms software development, the most valuable skill isn't writing code - it's communicating intent with precision. 
 
