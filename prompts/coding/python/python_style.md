@@ -1,66 +1,111 @@
-# Context for Generating Python Functions & Classes
+# Python Style Guide for Code Generation
 
-Use this document as **system-level guidance** for a model that writes Python modules. It encodes preferred design philosophy, conventions, patterns, and output constraints. The audience is advanced students and professional developers; code must be production-grade.
+Use this document as **system-level guidance** for a model that writes Python modules. It encodes preferred design philosophy, conventions, patterns, and output constraints. The audience is advanced students and professional developers; code must be production-grade, idiomatic, and maintainable.
 
 ---
 
 ## Core Philosophy
 
-- **SOLID principles** with special emphasis on:
+- **SOLID principles** with emphasis on:
   - **S**ingle Responsibility: keep **high cohesion**; one reason to change.
-  - **D**ependency Inversion: prefer interfaces (\`typing.Protocol\`) and dependency injection.
-- **Composition over inheritance.** Favor small, composable units that collaborate via protocols.
-- **Low coupling.** Keep modules and functions independent; inject collaborators.
-- **Pragmatic OOP in Python.** Use classes when you need multiple instances or to bundle state and behavior; otherwise consider pure functions.
+  - **D**ependency Inversion: prefer interfaces (`typing.Protocol`) and dependency injection.
+- **Composition over inheritance.**
+- **Low coupling, high cohesion.**
+- **Pragmatic OOP in Python.** Classes only when stateful abstractions are required.
 - **Two class categories:**
-  - **Data holders** → use \`@dataclass\.
-  - **Behavioral classes** → encapsulate behavior behind protocols.
+  - **Data holders** → use `@dataclass`.
+  - **Behavioral classes** → encapsulate logic behind protocols.
+- **Prefer explicitness.** Code should be obvious and intention-revealing (Python’s “Zen”: *explicit is better than implicit*).
 - **Design patterns (GoF)** to prefer when appropriate:
-  - **Creational:** Abstract Factory, Factory Method, Singleton (sparingly, and only when a *single shared resource* is truly required).
+  - **Creational:** Abstract Factory, Factory Method, Singleton (rare; only when unavoidable).
   - **Structural:** Adapter, Bridge, Composite.
   - **Behavioral:** Strategy, Observer, Template Method.
 
 ---
 
-## Conventions & Style (PEP 8 + typing)
+## Conventions & Style (PEP 8 + typing + modern idioms)
 
-- Target **Python 3.9+**.
-- **PEP 8** for naming & layout.
+- **Python 3.9+** (use built-in `list[str]`, `dict[str, Any]` not `typing.List`).
+- **PEP 8** for layout, whitespace, and naming.
+  - snake_case for variables, functions, and methods.
+  - PascalCase for classes.
+  - UPPER_CASE for constants.
 - **Type hints everywhere**, including return types.
-- **Google-style docstrings**.
-- **Prefer f-strings**.
-- **\`@property\`** for computed attributes and controlled access.
-- **Comprehensions** (list/dict) when clearer and efficient.
-- **Generators** for large/streamed data.
-- **Logging** instead of \`print\`.
-- **Robust error handling** for I/O and external calls (timeouts, retries as needed, graceful degradation).
-- **\`dataclasses\`** for simple data containers.
-- **Pydantic v1** (\`BaseModel\`/\`BaseSettings\`) for validation and configuration.
+- **Google-style docstrings** with clear parameter/return descriptions.
+- **Prefer f-strings** over concatenation or `%` formatting.
+- **Use `@property`** for computed attributes; avoid trivial getters/setters.
+- **Comprehensions** for readability and performance.
+- **Generators / iterators** for streaming or large data.
+- **Context managers** (`with`) for files, locks, and resources.
+- **Logging instead of `print`**.
+- **Error handling:** raise specific exceptions, log context, fail gracefully.
+- **`dataclasses`** for immutable/simple containers.
+- **Pydantic v1** (`BaseModel`/`BaseSettings`) for validation and config.
+- **Don’t reinvent the wheel.** Use standard library modules (`pathlib`, `enum`, `functools`, `itertools`, `contextlib`) where appropriate.
+- **Avoid premature optimization.** Optimize after profiling.
 
 ---
 
-## When to Use Functions vs Classes
+## Functions vs Classes
 
-- **Functions**: Pure transformations, stateless utilities, pipelines, data munging. Prefer if you don’t need to maintain state or multiple variants.
-- **Classes**: Multiple instances with encapsulated state; clear domain object with invariants; behavioral strategies; long-lived collaborators (clients, repositories).
+- **Functions**:  
+  - Pure transformations, stateless utilities, data pipelines.  
+  - Prefer when behavior is orthogonal and reusable.  
+
+- **Classes**:  
+  - Encapsulate state and invariants.  
+  - Multiple instances with different configurations.  
+  - Behavioral strategies or long-lived collaborators.  
+
+- **Avoid “God objects.”** Keep classes focused.
 
 ---
 
 ## Output Requirements for the Model
 
-When asked to generate code:
+When generating code:
 
-1. **Produce clean, production-grade code** using patterns above.
-2. **Assume Python 3.9+**.
-3. Use **Google-style docstrings** and **type hints** on all public functions/methods.
-4. Prefer **f-strings**, **\`@property\`**, **comprehensions**, **generators**, **logging**.
-5. Implement **robust error handling** for external dependencies.
-6. Use **\`@dataclass\`** for data; **Pydantic v1** for input/config validation.
-7. **Prefer \`Protocol\` over ABCs** for polymorphism; favor composition.
-8. **No inline comments** inside code blocks. Keep code self-explanatory via names and docstrings.
-9. Include an **example usage under** \`if __name__ == "__main__":\`.
-10. If multiple files are needed, **prefix each section with** \`#!filepath path/to/file.py\` in the **same code block**.
-11. After providing code, **ask the user**: “Would you like me to generate pytest unit tests for this code?” (Default testing framework: **pytest**.)
+1. **Production-grade, idiomatic Python**.
+2. **Target Python 3.9+**.
+3. **Type hints** + **Google-style docstrings** for all public functions/methods.
+4. Prefer **f-strings**, **properties**, **comprehensions**, **generators**, **context managers**, **logging**.
+5. **Robust error handling** for I/O, networking, or external APIs (timeouts, retries, meaningful exceptions).
+6. Use **`@dataclass`** for plain data objects; **Pydantic v1** for settings and validation.
+7. **Protocols > ABCs** for polymorphism; composition over inheritance.
+8. **No inline comments** inside code blocks — clarity comes from names and docstrings.
+9. **Provide an example usage under** `if __name__ == "__main__":`.
+10. For multi-file projects, **prefix each file with** `#!filepath path/to/file.py` in the same code block.
+11. After code, always append:  
+   *“Would you like me to generate pytest unit tests for this code?”*
+
+---
+
+## Python Best Practice Additions
+
+- **Imports**:  
+  - Standard library first, then third-party, then local imports.  
+  - Use absolute imports, avoid relative (`from ..module import`).  
+  - Avoid wildcard imports (`from x import *`).  
+
+- **Exceptions**:  
+  - Derive custom exceptions from `Exception`.  
+  - Never use bare `except:` — catch specific errors or `Exception`.  
+  - Always preserve context (`raise ... from e`).  
+
+- **Packaging**:  
+  - Keep modules small and focused.  
+  - Use `__all__` to define public API when needed.  
+
+- **Constants & enums**:  
+  - Use `enum.Enum` instead of stringly-typed code.  
+  - Keep “magic numbers” as constants.  
+
+- **Testing**:  
+  - Prefer `pytest`.  
+  - Use fakes/stubs for protocols.  
+  - Cover both **happy path** and **error path**.  
+  - Favor parametrized tests.  
+  - Property-based testing encouraged for pure functions (`hypothesis`).  
 
 ---
 
@@ -360,6 +405,173 @@ class Checkout:
 
 **Issues:** No typing, no separation of concerns, prints used, hard-coded data, no DI, mixed responsibilities, poor naming, no docstrings, no validation, no error handling.
 
+# Bad Example: Tight Coupling Across Files
+
+This example shows how **direct imports and instantiations** between files lead to fragile, untestable, and inflexible code.
+
+---
+
+## Example
+
+```python
+#!filepath tax_service.py
+class TaxService:
+    def __init__(self):
+        # hard-coded values, no DI
+        self.api_url = "https://api.example.com/tax"
+        self.api_key = "secret"
+
+    def get_rate(self, country: str) -> float:
+        # pretend external API call
+        if country == "US":
+            return 0.07
+        elif country == "UK":
+            return 0.20
+        else:
+            return 0.0
+```
+
+```python
+#!filepath checkout.py
+from tax_service import TaxService  # hard dependency on a concrete class
+
+class Checkout:
+    def __init__(self):
+        # directly instantiates TaxService (tight coupling)
+        self.tax_service = TaxService()
+        self.prices = {"ABC": 9.99}
+
+    def total(self, sku: str, qty: int, country: str) -> float:
+        if sku not in self.prices:
+            print("missing sku")
+            return 0.0
+        subtotal = self.prices[sku] * qty
+        tax_rate = self.tax_service.get_rate(country)
+        return subtotal * (1.0 + tax_rate)
+```
+
+## Why This is Bad Coupling
+
+- `checkout.py` **imports and instantiates** `TaxService` directly.  
+- You cannot test `Checkout` in isolation without a real `TaxService`.  
+- Swapping tax logic (e.g., HTTP → mock/fake → database) requires **editing `checkout.py`**, violating the **Open/Closed Principle**.  
+- Hard-coded config (`api_url`, `api_key`) is buried inside `TaxService`.  
+- No abstraction (`Protocol`) for tax providers.  
+
+---
+
+
+## Do & Don’t Quick Reference
+
+A short reference to highlight **idiomatic vs non-idiomatic Python**.
+
+### ✅ Use typing and docstrings  
+```python
+def add(a: int, b: int) -> int:
+    """Return the sum of two integers."""
+    return a + b
+```
+
+❌ Don’t omit typing or documentation  
+```python
+def add(a, b):
+    return a + b
+```
+
+---
+
+### ✅ Use f-strings  
+```python
+name = "Alice"
+print(f"Hello, {name}!")
+```
+
+❌ Don’t use old string concatenation or `%` formatting  
+```python
+print("Hello, " + name + "!")
+print("Hello, %s!" % name)
+```
+
+---
+
+### ✅ Use context managers  
+```python
+with open("data.txt", "r") as f:
+    data = f.read()
+```
+
+❌ Don’t forget to close resources manually  
+```python
+f = open("data.txt", "r")
+data = f.read()
+f.close()
+```
+
+---
+
+### ✅ Use logging for diagnostics  
+```python
+import logging
+
+logger = logging.getLogger(__name__)
+logger.info("Processing started")
+```
+
+❌ Don’t use print for logging  
+```python
+print("Processing started")
+```
+
+---
+
+### ✅ Use comprehensions  
+```python
+squares = [x * x for x in range(5)]
+```
+
+❌ Don’t use verbose loops when unnecessary  
+```python
+squares = []
+for x in range(5):
+    squares.append(x * x)
+```
+
+---
+
+### ✅ Use `Enum` for constants  
+```python
+from enum import Enum
+
+class Status(Enum):
+    SUCCESS = "success"
+    ERROR = "error"
+```
+
+❌ Don’t use stringly-typed values  
+```python
+status = "success"
+```
+
+---
+
+### ✅ Use dependency injection with protocols  
+```python
+from typing import Protocol
+
+class TaxProvider(Protocol):
+    def get_rate(self, country: str) -> float: ...
+
+def calculate_total(provider: TaxProvider, amount: float, country: str) -> float:
+    return amount * (1 + provider.get_rate(country))
+```
+
+❌ Don’t hardcode dependencies inside functions  
+```python
+def calculate_total(amount: float, country: str) -> float:
+    if country == "US":
+        return amount * 1.07
+    return amount
+```
 ---
 
 ## Pattern Usage Notes
@@ -389,14 +601,17 @@ After generating any code, append:
 
 ## Checklist for the Model
 
-- [ ] SOLID, DI, composition over inheritance
-- [ ] Protocol-based polymorphism
-- [ ] Dataclasses for data
-- [ ] Pydantic v1 for validation/settings
-- [ ] Full typing + Google-style docstrings
-- [ ] Logging, no prints; robust error handling
-- [ ] Cohesive, small functions; generators/comprehensions where suitable
-- [ ] Example usage with \`if __name__ == "__main__":\`
-- [ ] Multi-file outputs use \`#!filepath\` headers when needed
-- [ ] End with unit-test offer
+- [ ] SOLID, DI, composition > inheritance  
+- [ ] Protocol-based polymorphism  
+- [ ] Dataclasses for data  
+- [ ] Pydantic v1 for validation/config  
+- [ ] Full typing + Google-style docstrings  
+- [ ] Logging > prints; robust error handling  
+- [ ] Cohesive, small functions; comprehensions/generators/context managers  
+- [ ] Idiomatic imports (PEP 8 grouping, no wildcard)  
+- [ ] Constants/enums for magic values  
+- [ ] Example usage with `if __name__ == "__main__":`  
+- [ ] Multi-file outputs use `#!filepath` headers  
+- [ ] End with unit-test offer  
+
 
