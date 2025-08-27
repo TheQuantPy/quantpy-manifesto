@@ -9,12 +9,12 @@ The goal is to avoid vague, conflicting, or incomplete instructions and instead 
 
 You can use this template every time for writing specifications:
 
-> [Context] I am [role / background]. 
-> [Goal] I want [specific outcome]. 
-> [Task] Please [specific task]. 
-> [Rules] Include [X], avoid [Y]. 
-> [Format] Deliver in [bullets, code, essay, diagram, etc.]. 
-> [Tone] Use [style/tone]. 
+> [Context] I am [role / background]
+> [Goal] I want [specific outcome]
+> [Task] Please [specific task]
+> [Rules] Include [X], avoid [Y]
+> [Format] Deliver in [bullets, code, essay, diagram, etc.]
+> [Tone] Use [style/tone]
 
 ## Core Framework for a Prompt
 
