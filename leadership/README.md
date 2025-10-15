@@ -38,7 +38,7 @@ Here are 5 practical frameworks for being a great leader. Please find a more det
 - **Focus on behavior, not identity** – “This action caused X” vs. “You are X.”
 - **End with alignment** – Ensure clarity on next steps and expectations.
 
-#### 3. ealing with difficult personalities
+#### 3. Dealing with difficult personalities
 
 - **Diagnose** – Understand whether conflict is due to skill gaps, misaligned incentives, or values.
 - **Adapt communication** – Some need clarity, others need reassurance, some need boundaries. DISC personality framework can help in identification.
