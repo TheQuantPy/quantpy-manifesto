@@ -92,6 +92,6 @@ Don't start anything from scratch, complete a literature review (however brief) 
 - If you need to value vanilla/complex derivaties, use [QuantLib](https://www.quantlib.org/)
 - If you want to perform portfolio optimisation, start with [Riskfolio-Lib](https://github.com/dcajasn/Riskfolio-Lib/tree/master)
 - If you are looking to integrate machine learning into your financial analysis, build on [mlfinlab](https://github.com/hudson-and-thames/mlfinlab)
-- QuantStats Python library that performs portfolio profiling, allowing quants and portfolio managers to understand their performance better by providing them with in-depth analytics and risk metrics. [QuantStats](https://github.com/ranaroussi/quantstats)
+- If you want to calculate portfolio performance and risk metrics from backtest or live data, use [QuantStats](https://github.com/ranaroussi/quantstats)
 
 ## If you do the above, you’ll be in a much stronger position to succeed in quant finance.
