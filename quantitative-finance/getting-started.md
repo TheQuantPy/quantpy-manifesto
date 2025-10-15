@@ -33,7 +33,7 @@ If you are currently studying a quantitative finance program I would further rec
 - _Python Programming for Economics and Finance_ [(QuantEcon)](https://python-programming.quantecon.org/intro.html)
 - _Python for Data Analysis, 3rd Edition_ by Wes McKinney [(online)](https://wesmckinney.com/book/)
 
-### Implementing Quant Finance with Python
+#### Implementing Quant Finance with Python
 
 - Implementing Derivatives Models [(online)](https://www.amazon.it/Implementing-Derivatives-Models-Clewlow/dp/0471966517)
 - QuantLib Python Tutorials [(online)](https://gouthamanbalaraman.com/blog/quantlib-python-tutorials-with-examples.html)
