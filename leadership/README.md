@@ -44,7 +44,7 @@ Here are 5 practical frameworks for being a great leader. Please find a more det
 - **Adapt communication** – Some need clarity, others need reassurance, some need boundaries. DISC personality framework can help in identification.
 - **Protect culture** – A single toxic high-performer can damage a team more than multiple low performers.
 
-### 4. Be a leader not a micromanager!
+#### 4. Be a leader not a micromanager!
 
 - **Leverage Time Through People** – Delegate outcomes, not just tasks. Trust individuals to get the job done.
 - **Create Clear Systems** – Build processes so decisions don’t bottleneck at the founder.
