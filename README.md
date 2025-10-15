@@ -2,7 +2,16 @@
 
 > *“Principles are meant to evolve. This is mine — for now.”*
 
-Welcome to the **QuantPy Manifesto** — a living document of my personal principles, frameworks, and beliefs that guide how I think, create, and live. This is not a finished philosophy, but an ongoing project that grows and updates as I do.
+My name is Jonathon Emerick, but since I started publishing videos on YouTube in 2020 I have assumed the online alias 'QuantPy', a shorting for Quantitative Finance with Python. Ever since I started posting YouTube videos on quantitative finance topics, I have received an overwhelming number of messages through LinkedIn and email related to 2 questions:
+1. Teach me how to make money trading; and
+2. I am young, ambitious and motivated, I want to be [FILL IN YOUR DREAM CAREER HERE], please advise me what I should do?
+
+To the people who are primarily thinking about 1, this collection of thoughts and reflections are probably not suited to you. Although I aim to make better risk-weighted decisions in trading environments to maximise my wealth curve, unless we are working on the same team with aligned incentives I will not be giving up edge for free. 
+In general I would advise being skeptical of trading gurus who claim they can teach you how to trade profitably.
+
+For people who fall into the 2nd bucket of questioning, hopefully I can help you. These collections are from reflections of my early working career (20-30s), and recommendations to my younger self, my two young boys Leonardo and Tommaso, and any other impressionable young adults who are money crazed and ready to make their mark on this world. This advice is for you!
+
+The **QuantPy Manifesto** is a living document of my personal principles, frameworks, and beliefs that guide how I think, create, and live. This is not a finished philosophy, but an ongoing project that grows and updates as I do.
 
 Life is an iterative process. We gather new data, experience new outcomes, challenge our assumptions, and update our models of the world. This manifesto captures that process — my current best understanding of what matters, how to think, how to lead, how to solve problems, and how to live with purpose and clarity.
 
