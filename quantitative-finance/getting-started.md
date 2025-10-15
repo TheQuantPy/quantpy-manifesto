@@ -58,6 +58,7 @@ If you are currently studying a quantitative finance program I would further rec
 - _Advances in Active Portfolio Management_ by Richard C. Grinold and Ronald N. Kahn
 - _The Elements of Quantitative Investing_ by Giuseppe Andrea Paleologo
 - _Quantitative Portfolio Management_ by Michael Isichenko
+- _Let's Be Rational_ by Peter Jackel [(online)](https://onlinelibrary.wiley.com/doi/abs/10.1002/wilm.10395)
 
 ---
 
@@ -83,6 +84,8 @@ If you are currently studying a quantitative finance program I would further rec
 6. Don’t just read—build, code, and experiment.
 
 ## Closing Thoughts
+
+Read [_The Financial Modeler's Manifesto_](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=1324878), then read it again! If you are reading this github repository, you will likely be using models your entire working life, hold onto these recommendations and please follow them.
 
 Don't start anything from scratch, complete a literature review (however brief) and build on the solutions of others who have come before you!
 
