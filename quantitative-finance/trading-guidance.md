@@ -1,4 +1,4 @@
-# 📈 Trading Guidance
+# Trading Guidance
 
 Trading is fundamentally an exercise in **managing ignorance**.  
 No one has perfect knowledge of markets, and the edge comes from **risk management, discipline, and probabilistic thinking**.  
