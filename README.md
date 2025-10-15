@@ -11,7 +11,7 @@ In general I would advise being skeptical of trading gurus who claim they can te
 
 For people who fall into the 2nd bucket of questioning, hopefully I can help you. These collections are from reflections of my early working career (20-30s), and recommendations to my younger self, my two young boys Leonardo and Tommaso, and any other impressionable young adults who are money crazed and ready to make their mark on this world. This advice is for you!
 
-## What Is This Document?
+## What Is This
 The **QuantPy Manifesto** is a living document of my personal principles, frameworks, and beliefs that guide how I think, create, and live. This is not a finished philosophy, but an ongoing project that grows and updates as I do.
 
 Life is an iterative process. We gather new data, experience new outcomes, challenge our assumptions, and update our models of the world. This manifesto captures that process — my current best understanding of what matters, how to think, how to lead, how to solve problems, and how to live with purpose and clarity.
