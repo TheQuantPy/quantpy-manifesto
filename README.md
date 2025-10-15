@@ -16,16 +16,10 @@ The **QuantPy Manifesto** is a living document of my personal principles, framew
 Life is an iterative process. We gather new data, experience new outcomes, challenge our assumptions, and update our models of the world. This manifesto captures that process — my current best understanding of what matters, how to think, how to lead, how to solve problems, and how to live with purpose and clarity.
 
 ### Why I Created This
-As a quantitative person with an entrepreneurial spirit, I have always admired quant researchers that have made their work available to others, being generous with their time and knowledge.
-Two individuals who have contributed in a big way to the quant community are Emmanuel Derman and Paul Wilmott who co-authored the Financial Modelers' Manifesto, a proposal for increased responsibility in financial modeling and risk management.
-In a similiar way to the impact that [The Financial Modelers’ Manifesto](https://wilmott.com/financial-modelers-manifesto/) has for anyone using models in their career, on a smaller scale I wanted to create a positive impact for the small number of individuals who have the drive, intelligent and energy to overcome hurdles and pursue a successful career in their 20-30s.
-Hopefully this manifesto can act as a guide and reference for how these motivated individuals can navigate their early career decisions.
-
 I wanted a single place to capture the *systems of thought* that shape my decisions. Over time, our minds collect hundreds of lessons, rules, and mental models — but without structure, they fade.  
 This repository acts as both:
 - A **handbook for myself**, to return to when I need clarity or perspective.
 - A **reference for others**, who may find parts of my process useful in their own journeys.
-
 
 ### A Living Document
 This manifesto will evolve. As I learn, unlearn, and re-learn, I’ll update and refine what’s written here. That’s the essence of growth — to stay open to better information and stronger reasoning.
