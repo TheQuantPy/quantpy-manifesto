@@ -23,9 +23,9 @@ This repository acts as both:
 - A **reference for others**, who may find parts of my process useful in their own journeys.
 
 ### A Living Document
-This manifesto will evolve. As I learn, unlearn, and re-learn, I’ll update and refine what’s written here. That’s the essence of growth — to stay open to better information and stronger reasoning.
+This manifesto will evolve. As I learn, unlearn, and re-learn, I’ll update and refine what’s written here. That’s the essence of growth, to stay open to better information and stronger reasoning.
 
-Nothing here is absolute. Every belief, principle, or framework is a snapshot in time — a reflection of my current understanding of how to think, act, and live effectively.
+Nothing here is absolute. Every belief, principle, or framework is a snapshot in time, a reflection of my current understanding of how to think, act, and live effectively.
 
 ### What You’ll Find Inside
 This repository is organised into thematic areas — each representing a core domain of thought:
