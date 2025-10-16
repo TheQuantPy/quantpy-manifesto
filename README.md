@@ -2,7 +2,7 @@
 
 > *“Principles are meant to evolve. This is mine — for now.”*
 
-My name is Jonathon Emerick, but since I started publishing videos on YouTube in 2020 I have assumed the online alias 'QuantPy', a shorting for Quantitative Finance with Python. Ever since I started posting YouTube videos on quantitative finance topics, I have received an overwhelming number of messages through LinkedIn and email related to 2 questions:
+My name is Jonathon Emerick, but since I started publishing videos on YouTube in 2020 I have assumed the online alias 'QuantPy', a shorting for Quantitative Finance with Python. From the moment I started posting videos on quantitative finance topics, I have received an overwhelming number of messages through LinkedIn and email related to 2 questions:
 1. Teach me how to make money trading; and
 2. I am young, ambitious and motivated, I want to be [FILL IN YOUR DREAM CAREER HERE], please advise me what I should do?
 
