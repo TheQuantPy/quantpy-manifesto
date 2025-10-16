@@ -1,6 +1,6 @@
 # The QuantPy Manifesto
 
-> *“Principles are meant to evolve. This is mine — for now.”*
+> *“Principles are meant to evolve. This is mine ... for now.”*
 
 My name is Jonathon Emerick, but since I started publishing videos on YouTube in 2020 I have assumed the online alias 'QuantPy', a shorting for Quantitative Finance with Python. From the moment I started posting videos on quantitative finance topics, I have received an overwhelming number of messages through LinkedIn and email related to 2 questions:
 1. Teach me how to make money trading; and
@@ -47,7 +47,7 @@ Each section explores the principles and lessons that guide my decisions within 
 I don’t claim to have the answers, only the curiosity to keep searching for better ones.  
 If anything here helps you think more clearly, act more intentionally, or find more meaning in your work and life, then this project has served its purpose.
 
-> *Here’s mine — and I hope it helps you build yours.*
+> *Here’s mine, and I hope it helps you build yours.*
 
 ---
 
