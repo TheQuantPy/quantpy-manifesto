@@ -14,10 +14,10 @@ For people who fall into the 2nd bucket of questioning, hopefully I can help you
 ## What Is This
 The **QuantPy Manifesto** is a living document of my personal principles, frameworks, and beliefs that guide how I think, create, and live. This is not a finished philosophy, but an ongoing project that grows and updates as I do.
 
-Life is an iterative process. We gather new data, experience new outcomes, challenge our assumptions, and update our models of the world. This manifesto captures that process — my current best understanding of what matters, how to think, how to lead, how to solve problems, and how to live with purpose and clarity.
+Life is an iterative process. We gather new data, experience new outcomes, challenge our assumptions, and update our models of the world. This manifesto captures that process, my current best understanding of what matters, how to think, how to lead, how to solve problems, and how to live with purpose and clarity.
 
 ### Why I Created This
-I wanted a single place to capture the *systems of thought* that shape my decisions. Over time, our minds collect hundreds of lessons, rules, and mental models — but without structure, they fade.  
+I wanted a single place to capture the *systems of thought* that shape my decisions. Over time, our minds collect hundreds of lessons, rules, and mental models, but without structure, they fade.  
 This repository acts as both:
 - A **handbook for myself**, to return to when I need clarity or perspective.
 - A **reference for others**, who may find parts of my process useful in their own journeys.
@@ -44,7 +44,7 @@ lessons-learned/
 Each section explores the principles and lessons that guide my decisions within that domain.
 
 ### My Hope
-I don’t claim to have the answers — only the curiosity to keep searching for better ones.  
+I don’t claim to have the answers, only the curiosity to keep searching for better ones.  
 If anything here helps you think more clearly, act more intentionally, or find more meaning in your work and life, then this project has served its purpose.
 
 > *Here’s mine — and I hope it helps you build yours.*
