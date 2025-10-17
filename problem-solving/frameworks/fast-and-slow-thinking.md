@@ -1,7 +1,5 @@
 # Fast vs. Slow Thinking in Problem Solving
 
-## Recap
-
 ### System 1 (Fast Thinking)
 
 - Intuitive, rapid, heuristic-based.
