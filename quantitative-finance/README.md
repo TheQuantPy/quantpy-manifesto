@@ -15,7 +15,7 @@
 As a quantitative person with an entrepreneurial spirit, I have always admired quant researchers that have made their work available to others, being generous with their time and knowledge.
 Two individuals who have contributed in a big way to the quant community are Emmanuel Derman and Paul Wilmott who co-authored the Financial Modelers' Manifesto, a proposal for increased responsibility in financial modeling and risk management.
 
-In a similiar way to the impact that [The Financial Modelers’ Manifesto](https://wilmott.com/financial-modelers-manifesto/) has for anyone using models in their career, on a smaller scale I wanted to create a positive impact for the small number of individuals who have the drive, intelligent and energy to overcome hurdles and pursue a successful career in their 20-30s.
+In a similiar way to the impact that [The Financial Modelers’ Manifesto](https://wilmott.com/financial-modelers-manifesto/) has for anyone using models in their career, on a smaller scale I wanted to create a positive impact for the small number of individuals who have the drive, intellect and energy to overcome hurdles and pursue a successful career in their 20-30s.
 Hopefully this manifesto can act as a guide and reference for how these motivated individuals can navigate their early career decisions in pursuit of a long and rewarding career in quant finance.
 
 ## Read This First
