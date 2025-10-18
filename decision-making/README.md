@@ -108,12 +108,3 @@ It teaches us not just how to find the “optimal” solution once, but how to *
 In short:  
 > Powell didn’t just extend optimization — he **redefined how we model, learn, and decide** in a world where uncertainty is unavoidable.
 
----
-
-
-## 4. Final Takeaways
-
-- **Bellman’s Equation is elegant—but often impractical**. Real-world decision-making thrives on approximate yet robust strategies.
-- Four practical policy classes (function approximation, cost approximation, deterministic and stochastic look-ahead) offer a spectrum of real-world applicability.
-- In research operations, **modeling uncertainty and deploying actionable heuristics** is often more valuable than seeking theoretically optimal but intractable solutions.
-
