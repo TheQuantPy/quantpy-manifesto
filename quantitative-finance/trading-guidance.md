@@ -77,7 +77,7 @@ Trading is a game of **probabilities, not certainties**. The goal is not to be r
 ---
 
 ## 7. Practical Habits
-- **Trading Journal** – Record: thesis, entry, exit, P&L, metrics, and mindset.  
+- **Trading Journal** – Record: thesis, entry, exit, P&L, metrics.  
 - **Regular Review** – Analyze losers more than winners.  
 - **Automation Where Possible** – Use systematic signals to reduce emotional interference.  
 
